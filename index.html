@@ -13,9 +13,11 @@
 </head>
   <body>
           
-  
+ 
+
+
     <!--Шапка сайту-->
-    <header class="header">
+    <header class="header" >
 
         <div class="container main-nav">
 
@@ -26,7 +28,7 @@
             </a>
 
         <ul class="site-nav lyst">
-            <li class="nav-item"><a  href="./index.html" class="nav-lyst">Студія</a></li>
+            <li class="nav-item"><a  href="./index.html" class="nav-lyst nav-underline">Студія</a></li>
             <li class="nav-item"><a  href="./portfolio.html" class="nav-lyst">Портфоліо</a></li>
             <li class="nav-item"><a  href="" class="nav-lyst">Контакти</a></li>
         </ul>
@@ -65,7 +67,16 @@
         <section class="hero">
             
             <h1 class="section-bissnes">Ефективні рішення для вашого бізнесу</h1>
-            <button class="hero-button" type="button">Замовити послугу</button>
+            
+
+            <button class="hero-button" type="button" data-modal-open>Замовити послугу</button>
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button class="modal-button-close" data-modal-close>
+                        
+                    </button>
+                </div>
+            </div>
 
             
 
@@ -132,13 +143,18 @@
         <ul class="work lyst">
             <li class="work-list">
                 <img src="./images/img.jpg" alt="верстка" width="370">
+                <p class="work-title">ДЕСКТОПНІ ДОДАТКИ</p>
             </li>
     
             <li class="work-list">
-                 <img src="./images/img1.jpg" alt="сумісництво з телефоном" width="370"> </li>
+                 <img src="./images/img1.jpg" alt="сумісництво з телефоном" width="370"> 
+                 <p class="work-title">МОБІЛЬНІ ДОДАТКИ</p>
+                </li>
     
             <li class="work-list">
-                <img src="./images/img2.jpg" alt="сумісництво з планшетом" width="370"> </li>
+                <img src="./images/img2.jpg" alt="сумісництво з планшетом" width="370"> 
+                <p class="work-title">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
+            </li>
         </ul>
         </div>
     </section>
@@ -382,6 +398,6 @@
     </div>
     </footer>
 
-    
+    <script src="./js/modal.js"></script>
 </body>
 </html>

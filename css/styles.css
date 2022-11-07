@@ -83,7 +83,7 @@ img {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-
+  transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
   color: #000000;
 }
 .logo-studio {
@@ -92,11 +92,11 @@ img {
   font-size: 26px;
   line-height: 1.2;
   color: #ffffff;
+  transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
 }
 
 .logo-white:hover,
 .logo-white:focus {
-  transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
   color: var(--accent-color);
 }
 
@@ -133,12 +133,12 @@ img {
   margin-bottom: 32px;
 
   color: var(--title-color);
+  transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
 }
 
 .site-nav .nav-lyst:hover,
 .site-nav .nav-lyst:focus {
   color: var(--accent-color);
-  transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
 }
 
 .site-nav {
@@ -212,18 +212,17 @@ img {
 .site-nav-tel {
   text-decoration: none;
   color: var(--main-color-text);
+  transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
 }
 
 .site-nav-mail:hover,
 .site-nav-mail:focus {
   color: var(--accent-color);
-  transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
 }
 
 .site-nav-tel:hover,
 .site-nav-tel:focus {
   color: var(--accent-color);
-  transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
 }
 
 /* hero styles */
@@ -275,14 +274,13 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
-  transition: background-color 250ms var(--cubic);
+  transition: background-color 250ms var(--cubic), box-shadow 250ms var(--cubic);
 }
 
 .hero-button:hover {
   background-color: #188ce8;
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition: box-shadow 250ms var(--cubic);
 }
 .backdrop {
   position: fixed;
@@ -464,12 +462,12 @@ img {
   height: 44px;
   margin-right: 10px;
   color: #afb1b8;
+  transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
 }
 
 .social-item:hover {
   background-color: var(--accent-color);
   color: #ffffff;
-  transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
 }
 
 .section-social:hover {
@@ -481,6 +479,7 @@ img {
   width: 20px;
   height: 20px;
   fill: currentColor;
+  transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
 }
 
 .section-title-team {
@@ -522,6 +521,11 @@ img {
   cursor: pointer;
   color: var(--title-color);
   background: #f5f4fa;
+  text-align: center;
+  letter-spacing: 0.03em;
+  height: 38px;
+  transition: background-color 250ms var(--cubic), color 250ms var(--cubic),
+    box-shadow 250ms var(--cubic);
 }
 
 .button {
@@ -542,7 +546,6 @@ img {
   background-color: var(--accent-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
 }
 
 /* PORTFOLIO */
@@ -585,7 +588,6 @@ img {
 .pf-elements:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: box-shadow 250ms var(--cubic);
 }
 .pf-thumb {
   position: relative;
@@ -633,6 +635,7 @@ img {
 .pf-elements {
   width: 370px;
   margin: 15px;
+  transition: box-shadow 250ms var(--cubic);
   /* margin-right: 30px;
     margin-bottom: 30px; */
 }
@@ -679,6 +682,10 @@ img {
   margin: 0;
 }
 
+.client-tutorial {
+  transition: color 250ms var(--cubic), border 250ms var(--cubic);
+}
+
 .client-about {
   padding: 16px 32px;
   width: 170px;
@@ -686,7 +693,7 @@ img {
   fill: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  transition: background-color 250ms var(--cubic), border 250ms var(--cubic);
+  transition: color 250ms var(--cubic), border 250ms var(--cubic);
 }
 .client-about:hover {
   fill: var(--accent-color);
@@ -706,6 +713,7 @@ img {
   font-size: 14px;
   line-height: 1.7;
   color: #ffffff;
+  transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
 }
 
 .address {
@@ -730,17 +738,16 @@ img {
   font-size: 14px;
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.6);
+  transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
 }
 
 .maps:hover,
 .maps:focus {
-  transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
   color: var(--accent-color);
 }
 
 .address-title:hover,
 .address-title:focus {
-  transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
   color: var(--accent-color);
 }
 
@@ -782,9 +789,9 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   margin-right: 10px;
+  transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
 }
 .join-button:hover {
-  transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
   background-color: var(--accent-color);
 }
 
